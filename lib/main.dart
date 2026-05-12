@@ -10,7 +10,7 @@ void main() async {
   Hive.registerAdapter(ExpenseCategoryAdapter()); // typeId: 0
   Hive.registerAdapter(ExpenseAdapter());          // typeId: 1
   await Hive.openBox<Expense>('expenses');
-  await Hive.openBox('settings');
+  await Hive.openBox('settings'); 
   runApp(const SpendWiseApp());
 }
 
